@@ -10,47 +10,116 @@
 @font-face {
     font-family: Montserrat;
     src: url('https://fonts.google.com/specimen/Montserrat');
-    font-family: Fraunces;
-    src:url('https://fonts.google.com/specimen/Fraunces')
 }
+
+
+/* GENERAL */
+
+h1 {
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family:'Montserrat',sans-serif;
+    font-weight: 500;
+    color:var(--grey)
+}
+
 
 body {
-    background-color: var(--cream);
+    background-color:var(--cream);
+    display: grid;
+    place-items:center;
     min-height: 100vh;
+    margin:0;
+    color:white
 }
 
-.wrapper {
+.grid-container {
+    background-color: rebeccapurple;
+    border-radius: 15px;
+    height: 500px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap:5px; */
+}
+
+.product {
+    background-color:cadetblue;
+        padding: 10px;
+}
+
+.product-image {
+   height:50%
+}
+
+
+
+.description {
+    background-color:var(--white);
+    color:black;
+    border-radius: 1%;
+    padding: 30px;
+}
+
+
+/* INDIVIDUAL */
+.price {
+    /* background-color: darkgoldenrod; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-    background-color: coral;
-    width: fit-content;
-    /* padding: 15px; */
-    margin-block-end: 15px;
-    border-radius: 20px;
+    padding: 10px;
+     margin-block-end: 10px;
+}
+    
+.price s {
+    color:grey
 }
 
-#product-image {
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
+.price strong {
+    font-family: Fraunces,sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-inline-end: 20px;
+    color:var(--green-500);
 }
 
-#cart {
-   color:red;
+.cart-section {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
-    background-color: var(--green-700);
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 70px;
+    background-color: var(--green-500);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--cream);
+    color:var(--white);
+    font-family: Montserrat,sans-serif;
+    font-weight: bold;
 }
+
 
 .attribution {
         font-size: 11px;
         text-align: center;
+        color:var(--green-500);
       }
 
       .attribution a {
         color: hsl(228, 45%, 44%);
+        text-decoration: none;
       }
+
+
+      /* Fine tune border-radius of wrapper */
