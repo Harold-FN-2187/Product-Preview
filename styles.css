@@ -22,8 +22,8 @@ body {
 .product-card {
     display: flex;
     flex-direction: row;
-    max-width: 600px;
-    border-radius: 8px;
+    max-width: 37.5rem;
+    border-radius: 0.5rem;
     width: 90%;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -47,7 +47,7 @@ body {
 .product-description {
     flex: 1;
     background-color: var(--white);
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +73,7 @@ body {
     letter-spacing: 0.2em;
     font-family: Montserrat, sans-serif;
     color:var(--grey); 
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     text-transform: uppercase; 
 }
@@ -82,7 +82,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 10px; */
     margin-block-end: 10px;
 }
 
@@ -94,8 +93,8 @@ body {
     font-family: Fraunces,sans-serif;
     font-weight: 700;
     font-size: 1.75rem;
-    margin-inline-end:20px;
-    color:var(--green-700);
+    margin-inline-end:1.25rem;
+    color:var(--green-500);
 }
 
 .cart-section {
@@ -103,16 +102,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px; 
+    gap: 0.625rem; 
 }
 
  button {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 15px 70px; 
+    gap: 0.5rem;
+    padding: 0.938rem 4.375rem; 
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border: none; 
     color: white;
     font-family: Montserrat, sans-serif;
@@ -123,11 +122,11 @@ body {
 
 
 button:hover {
-    background-color: #008080;
+    background-color:var(--green-700);
 }
 
 .attribution {
-        font-size: 11px;
+        font-size: 0.063rem;
         text-align: center;
         color:var(--green-500);
       }
@@ -137,13 +136,7 @@ button:hover {
         text-decoration: none;
       }
 
-
-      /*
-       Use <picture> tag for imaage
-      */
-
-
-@media screen and (width <= 600px)
+@media screen and (width <= 37.5rem)
     {
     .product-card {
         flex-direction: column;
