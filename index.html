@@ -11,7 +11,6 @@
       href="./images/favicon-32x32.png"
     />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,11 +23,17 @@
     <style></style>
   </head>
   <body>
-    <div class="product-card">
+    <main class="product-card">
       <div class="product-image">
         <picture>
-          <source srcset="./images/image-product-mobile.jpg" media="(width <= 600px)">
-          <img alt="Image of Perfume bottle" src="./images/image-product-desktop.jpg"/>
+          <source
+            srcset="./images/image-product-mobile.jpg"
+            media="(width <= 600px)"
+          />
+          <img
+            alt="Image of Perfume bottle"
+            src="./images/image-product-desktop.jpg"
+          />
         </picture>
       </div>
 
@@ -45,23 +50,25 @@
         </div>
 
         <div class="cart">
-            <div class="cart-section">
-            <button class="cart">
-              <img alt="cart icon" src="./images/icon-cart.svg">
+          <div class="cart-section">
+            <button type="button" class="cart">
+              <img alt="cart icon" src="./images/icon-cart.svg" />
               <span>Add To Cart</span>
             </button>
           </div>
+
+          
         </div>
       </div>
-    </div>
-   
-    </div>
+    </main>
+    <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Harold</a>.
+          </div>
   </body>
-  <footer>
- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Harold</a>.
-  </footer>
+    </div>
 </html>
