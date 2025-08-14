@@ -53,16 +53,17 @@ body {
 }
 
 
-.product-description h2 {
+.product-description h1 {
     font-size: 1.5em;
     font-family:Fraunces, sans-serif;
-    color:var(--black)
+    color:var(--black);
+    font-weight: 700;
 }
 
 .product-description p {
     line-height: 1.6;
     color: var(--grey);
-    margin-bottom:1.25rem; 
+    margin-block-end:1.25rem; 
     font-family: Montserrat,sans-serif;
 }
 
@@ -130,6 +131,7 @@ button:hover {
 .attribution a {
     text-decoration: none;
     font-weight: 700;
+    border-block-end: 2px solid black;
 }
 
 @media screen and (width <= 37.5rem)
